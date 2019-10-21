@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="sr">
+<head>
+    <title>Nikola Tesla - Najpoznatiji srpski i svetski pronalazač</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Nikola Tesla bio je jedan od najpoznatijih srpskih i svetskih pronalazača i naučnika u oblasti fizike, elektrotehnike i radiotehnike.">
+    <meta name="keywords" content="Nikola Tesla, fizika, struja,pronalazač, naučnik, elektrotehnika, radiotehnike">
+    <meta name="author" content="Lazar Marojkin"/>
+    <link rel="icon" href="slike/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <div id="zaglavlje">
+        <div id="meni">
+            <h1><a href="index.html">Nikola Tesla</a></h1>
+            <span><i class="fa fa-sign-in fa-2x" onclick="logPrikaz()"></i></span>
+            <ul>
+                <li><a href="index.html">Biografija</a></li>
+                <li><a href="pronalasci.html">Pronalasci</a></li>
+                <li><a href="galerija.html">Galerija</a></li>
+            </ul>
+        </div>
+    </div>
+    <div id="logovanje">
+        <div id="logovanje-okvir">
+            <div class="telo">
+                <span><i class="fa fa-close" style="font-size: 1.5em;" onclick="zatvori()"></i></span>
+                <h2>Prijava</h2>
+            </div>
+            <div class="telo" style="margin-bottom: 30px; margin-top: 20px;">
+                <label>Korisničko ime</label><br>
+                <input type="text" placeholder="Unesite korisničko ime..."><br>
+                <label>Šifra</label><br>
+                <input type="password" placeholder="Unesite vašu šifru...">
+            </div>
+            <div class="telo potvrda">
+                <button type="submit">Prijavi se</button>
+                <span onclick="registrujSe()">Registruj se</span>
+            </div>
+        </div>
+    </div>
+    <div id="registracija">
+        <div id="registracija-okvir">
+            <div class="telo ">
+                <span><i class="fa fa-close" style="font-size: 1.5em;" onclick="zatvori()"></i></span>
+                <h2>Registracija</h2>
+            </div>
+            <div class="telo" style="margin-bottom: 30px; margin-top: 20px;">
+                <label>Unesite ime i prezime</label><br>
+                <input type="text" placeholder="Ime i prezime..."><br>
+                <label>Korisničko ime</label><br>
+                <input type="text" placeholder="Unesite korisničko ime..."><br>
+                <label>Šifra</label><br>
+                <input type="password" placeholder="Unesite vašu šifru...">
+            </div>
+            <div class="telo potvrda">
+                <button type="submit">Registruj se</button>
+                <span onclick="prijaviSe()">Prijavi se</span>
+            </div>
+        </div>
+    </div>
+
+    <div id="autor">
+        <div class="okvir">
+            <img src="slike/autor.jpg" alt="Autor sajta"/>
+            <h2>Lazar Marojkin<br>346/17</h2>
+            <p style="text-align: center">Zovem se Lazar Marojkin, rođen sam u Kikindi 22.09.1997. Završio sam Gimnaziju "Dušan Vasiljev" u Kikindi. Ovaj sajt je rađen kao projekat za kurs iz Praktikuma iz veb dizajna na visokoj ICT!</p>
+        </div>
+    </div>
+    <div id="futer">
+        <div class="okvir">
+            <span>&copy;&nbsp;Lazar Marojkin</span>
+            <ul id="opste">
+                <li class="aktivan"><a href="#">Autor</a></li>
+                <li><a href="sitemap.xml">Sitemap</a></li>
+                <li><a href="sass.txt">Sass</a></li>
+            </ul>
+            <div id="social">
+                <ul>
+                    <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                    <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+                    <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="kliner"></div>
+    </div>
+    <script>
+        function zatvori(){
+            if(document.getElementById("logovanje").style.display == "block")
+                document.getElementById("logovanje").style.display = "none";
+            else
+                document.getElementById("registracija").style.display = "none";
+        }
+        function logPrikaz(){
+            document.getElementById("logovanje").style.display = "block";
+        }
+        function prijaviSe(){
+            document.getElementById("registracija").style.display = "none";
+            document.getElementById("logovanje").style.display = "block";
+        }
+        function registrujSe(){
+            document.getElementById("logovanje").style.display = "none";
+            document.getElementById("registracija").style.display = "block";
+        }
+        </script>
+</body>
+</html>

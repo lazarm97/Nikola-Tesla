@@ -1,0 +1,54 @@
+#galerija {
+  .okvir {
+    text-align: left;
+  }
+  padding: 20px 5px;
+}
+
+#futer {
+  ul {
+    display: flex;
+    li {
+      list-style-type: none;
+      padding-right: 15px;
+      a {
+        text-decoration: none;
+        color: #fff;
+      }
+      &:not(:last-child) {
+        border-right: 2px dashed #ccc;
+        margin-right: 15px;
+      }
+    }
+  }
+  font-size: 20px;
+  margin: 25px 0px;
+  align-items: center;
+  justify-content: space-between;
+  display: flex;
+  border-top: 2px solid #ccc;
+  padding-top: 10px;
+  .okvir {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.telo {
+  input {
+    &[type="text"], &[type="password"] {
+      padding: 5px 3px;
+      margin: 5px 0;
+      width: 100%;
+    }
+  }
+  label {
+    font-size: 20px;
+  }
+  button {
+    padding: 10px 25px;
+    font-size: 1em;
+    font-weight: bold;
+  }
+}
+

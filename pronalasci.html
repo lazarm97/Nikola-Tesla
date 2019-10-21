@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="sr">
+<head>
+    <title>Nikola Tesla - Najpoznatiji srpski i svetski pronalazač</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Nikola Tesla bio je jedan od najpoznatijih srpskih i svetskih pronalazača i naučnika u oblasti fizike, elektrotehnike i radiotehnike.">
+    <meta name="keywords" content="Nikola Tesla, fizika, struja,pronalazač, naučnik, elektrotehnika, radiotehnike">
+    <meta name="author" content="Lazar Marojkin"/>
+    <link rel="icon" href="slike/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <div id="zaglavlje">
+        <div id="meni">
+            <h1><a href="index.html">Nikola Tesla</a></h1>
+            <span><i class="fa fa-sign-in fa-2x" onclick="logPrikaz()"></i></span>
+            <ul>
+                <li><a href="index.html">Biografija</a></li>
+                <li class="aktivan"><a href="#">Pronalasci</a></li>
+                <li><a href="galerija.html">Galerija</a></li>
+            </ul>
+        </div>
+        <div class="kliner"></div>
+    </div>
+    <div id="logovanje">
+        <div id="logovanje-okvir">
+            <div class="telo">
+                <span><i class="fa fa-close" style="font-size: 1.5em;" onclick="zatvori()"></i></span>
+                <h2>Prijava</h2>
+            </div>
+            <div class="telo" style="margin-bottom: 30px; margin-top: 20px;">
+                <label>Korisničko ime</label><br>
+                <input type="text" placeholder="Unesite korisničko ime..."><br>
+                <label>Šifra</label><br>
+                <input type="password" placeholder="Unesite vašu šifru...">
+            </div>
+            <div class="telo potvrda">
+                <button type="submit">Prijavi se</button>
+                <span onclick="registrujSe()">Registruj se</span>
+            </div>
+        </div>
+    </div>
+    <div id="registracija">
+        <div id="registracija-okvir">
+            <div class="telo ">
+                <span><i class="fa fa-close" style="font-size: 1.5em;" onclick="zatvori()"></i></span>
+                <h2>Registracija</h2>
+            </div>
+            <div class="telo" style="margin-bottom: 30px; margin-top: 20px;">
+                <label>Unesite ime i prezime</label><br>
+                <input type="text" placeholder="Ime i prezime..."><br>
+                <label>Korisničko ime</label><br>
+                <input type="text" placeholder="Unesite korisničko ime..."><br>
+                <label>Šifra</label><br>
+                <input type="password" placeholder="Unesite vašu šifru...">
+            </div>
+            <div class="telo potvrda">
+                <button type="submit">Registruj se</button>
+                <span onclick="prijaviSe()">Prijavi se</span>
+            </div>
+        </div>
+    </div>
+
+    <div id="pronalasci">
+        <div class="okvir">
+            <h2>PRONALASCI</h2>
+            <h3 class="levo">Pronalasci i patenti iz naizmeničnih struja</h3>
+            <p>Prvi zahtev Američkom patentnom zavodu Nikola Tesla je podneo 6. maja 1885. godine, nazvavši ga "Komutator za električne dinamo mašine". Svoje najznačajnije pronalaske iz oblasti polifaznih motora na naizmeničnu struju i prenosa energije, uključujući generatore, transformatore, prenos električne struje na velika rastojanja i osvetljenje, Tesla patentira početkom 1887. godine.</p>
+            <h3 class="desno">Pronalsci prikazani na svetskoj izložbi u Čikagu</h3>
+            <p>Svetska izložba 1893. godine u Čikagu, bila je međunarodna izložba na kojoj je po prvi put ceo salon izdvojen samo za električna Teslin način da prikaže princip obrtnog magnetnog poljadostignuća. To je bio istorijski događaj jer su Tesla i Vestinghaus predstavili posetiocima svoj sistem naizmenične struje, osvetljavajući pri tome celu izložbu. Prikazane su Tesline fluoroscentne sijalice i sijalice sa jednim izvodom. Tesla je objasnio princip obrtnog magnetnog polja i indukcionog motora, izazivajući divljenje pri demonstraciji obrtanja bakarnog jajeta i postavljanja na vrh, što je predstavljeno kao Kolumbovo jaje. To je korišćeno da se objasni i prikaže model obrtnog magnetnog polja i induktivnog motora Tesla je H-zracima snimao svoju ruku.</p>
+            <h3 class="levo">Eksperimenti sa x zracima - rentgenski zraci</h3>
+            <p>Aprila 1887. godine Tesla počinje istraživanje H-zraka koristeći vakumsku cev. Pri izvođenju eksperimenata fotografisao je svoju ruku. Ovo svoje otkriće objavio je 1892. godine na jednom predavanju. Međutim, Teslini materijali su izgoreli u požaru, pa on ovo otkriće nikada nije patentirao. Nemački naučnik Vilhelm Rentgen objavio je otkriće X-zraka tri godine kasnije, 28. decembra 1895. godine, a Tesla mu je tom prilikom velikodušno čestitao.</p>
+            <h3 class="desno">Naizmenične struje visoke frekvencije</h3>
+            <p>Od 1893. do 1895. godine Tesla istražuje naizmenične struje visokih frekvencija. Uspeva da proizvede naizmeničnu struju napona od milion volti, koristeći Teslin kalem. Proučavao je i površinski efekat visokih frekvencija u provodnim materijalima, bavio se sinhronizacijom električnih kola i rezonatorima, lampom sa razređenim gasom, koja svetli bez žica, bežičnim prenosom električne energije i prvim prenosom radio talasa. U Sent Luisu (1893. godine) Tesla je prikazao prenos sličan radio komunikaciji.</p>
+            <h3 class="levo">Otkriće radija i bežičnog prenosa</h3>
+            <p>Kada je napunio 41 godinu, podneo je svoj prvi patent iz oblasti radija. Godinu dana kasnije američkoj vojsci prikazuje model radijski upravljanog broda, verujući da vojska može biti zainteresovana za radio kontrolisana torpeda. Tada je govorio o razvoju "umeća telematike", vrste robotike. Radio kontrolisan brod je javno prikazan 1898. Pronalazak radia i telekomandegodine na električnoj izložbi u Medison Skver Gardenu. Ovi uređaji su imali inovativni rezonantni prijemnik i niz logičkih kapija. Radio daljinsko upravljanje ostaje novotarija sve do 60-ih godina dvadesetog veka.</p>
+            <h3 class="desno">Električno paljenje za benzinske motore</h3>
+            <p>1898. godine Tesla je izumeo električni upaljač ili svećicu za benzinske motore sa unutrašnjim sagorevanjem, za šta mu je priznat patent pod nazivom "Električni upaljač za benzinske motore".</p>
+            <h3 class="levo">Eksperimenti u Koloradu Springsu</h3>
+            <p>Tesla je 1899. odlučio da se preseli i nastavi istraživanja u Koloradu Springsu, gde je imao dovoljno prostora za svoje eksperimente sa visokim naponima i visokim frekvencijama. Po svom dolasku, novinarima je izjavio da namerava da sprovede eksperiment bežične telegrafije između Pajks Pika (vrh Stenovitih planina u Koloradu) i Pariza. Teslini eksperimenti su ubrzo postali predmet urbanih legendi. U svom dnevniku je opisao eksperimente koji se tiču jonosfere i zemaljskih talasa izazvanih transferzalnim ili longitudinalnim talasima. Tesla je u svojoj laboratoriji dokazao da je Zemlja provodnik i vršeći pražnjenja od više miliona volti proizvodio veštačke munje duge više desetina metara. Tesla je takođe proučavao atmosferski elektricitet, promatrajući pražnjenja svojim prijemnicima. Tvrdio je čak da je izmerio i postojanje stojećih talasa u Zemlji.</p>
+            <h3 class="desno">Bežečni prenos energije</h3>
+            <p>Tesla napušta Kolorado Springs 7. januara 1900. godine, a laboratorija se ruši i rasprodaje za isplatu duga. Međutim, eksperimenti u Kolorado Springsu su Teslu pripremili za sledeći projekat, podizanje postrojenja za bežični prenos energije. U to vreme prijavljuje patent u oblasti rezonantnih električnih oscilatornih kola.</p>
+            <h3 class="levo">Nedovršena istraživanja i "Teslino oružje"</h3>
+            <p>Na svoj 75. rođendan (1931. godine) najavio je potpuno novi izvor energije, ali nije bio spreman da ga opiše pre njegovog potpunog završetka. Pretpostavlja se da se radi o motoru pogonjenom pomoću kosmičkih gama zraka. Kružile su tada dve priče, jedna da Tesla i Albert Anštajn rade na istraživanju antigravitacije, a druga da on istražuje nevidljive avione i brodove. Želeći da spreči Drugi svetski rat po svaku cenu, Tesla je u ''NJujork Tajmsu'' najavio "Smrtonosne zrake" neograničene moći. Obrazložio je svoj pronalazak kao "Zrake mira". Tehnički opis pronalaska 1937. godine ponudio je zemljama saveznicima: Sjedinjenim Državama, Kanadi, Engleskoj, Francuskoj, Sovjetskom Savezu i Jugoslaviji. Tadašnji Sovjetski Savez je pokazao najveću zainteresovanost za Teslin izum i 1939. godine izvršio prve eksperimente. Nacisti su 1939. godine napali Poljsku i sa radio dirigovanim projektilima V-2 bombardovali London. Tesla je poželeo zaštititi svoju Jugoslaviju, predlažući postavljanje 9 stanica "Nevidljivih zraka" od po 200 kW. Sve je propalo nemačkim divljačkim bombardovanjem Beograda 6. aprila 1941. godine, kada je poginulo oko 25 000 nedužnih civila. Do današljih dana ova Teslina istraživanja ostala su obavijena delom tajne.</p>
+        </div>
+    </div>
+    <div id="futer">
+        <div class="okvir">
+            <span>&copy;&nbsp;Lazar Marojkin</span>
+            <ul id="opste">
+                <li><a href="autor.html">Autor</a></li>
+                <li><a href="sitemap.xml">Sitemap</a></li>
+                <li><a href="sass.txt">Sass</a></li>
+            </ul>
+            <div id="social">
+                <ul>
+                    <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                    <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+                    <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="kliner"></div>
+    </div>
+    <script>
+        function zatvori(){
+            if(document.getElementById("logovanje").style.display == "block")
+                document.getElementById("logovanje").style.display = "none";
+            else
+                document.getElementById("registracija").style.display = "none";
+        }
+        function logPrikaz(){
+            document.getElementById("logovanje").style.display = "block";
+        }
+        function prijaviSe(){
+            document.getElementById("registracija").style.display = "none";
+            document.getElementById("logovanje").style.display = "block";
+        }
+        function registrujSe(){
+            document.getElementById("logovanje").style.display = "none";
+            document.getElementById("registracija").style.display = "block";
+        }
+        </script>
+</body>
+</html>

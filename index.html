@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="sr">
+<head>
+    <title>Nikola Tesla - Najpoznatiji srpski i svetski pronalazač</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="Nikola Tesla bio je jedan od najpoznatijih srpskih i svetskih pronalazača i naučnika u oblasti fizike, elektrotehnike i radiotehnike.">
+    <meta name="keywords" content="Nikola Tesla, fizika, struja,pronalazač, naučnik, elektrotehnika, radiotehnike">
+    <meta name="author" content="Lazar Marojkin"/>
+    <link rel="icon" href="slike/favicon.ico" type="image/x-icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <div id="zaglavlje">
+        <div id="meni">
+            <h1><a href="index.html">Nikola Tesla</a></h1>
+            <span><i class="fa fa-sign-in fa-2x" onclick="logPrikaz()"></i></span>
+            <ul>
+                <li class="aktivan"><a href="#">Biografija</a></li>
+                <li><a href="pronalasci.html">Pronalasci</a></li>
+                <li><a href="galerija.html">Galerija</a></li>
+            </ul>
+        </div>
+        <div class="kliner"></div>
+    </div>
+    <div id="logovanje">
+            <div id="logovanje-okvir">
+                <div class="telo">
+                    <span><i class="fa fa-close" style="font-size: 1.5em;" onclick="zatvori()"></i></span>
+                    <h2>Prijava</h2>
+                </div>
+                <div class="telo" style="margin-bottom: 30px; margin-top: 20px;">
+                    <label>Korisničko ime</label><br>
+                    <input type="text" placeholder="Unesite korisničko ime..."><br>
+                    <label>Šifra</label><br>
+                    <input type="password" placeholder="Unesite vašu šifru...">
+                </div>
+                <div class="telo potvrda">
+                    <button type="submit">Prijavi se</button>
+                    <span onclick="registrujSe()">Registruj se</span>
+                </div>
+            </div>
+        </div>
+        <div id="registracija">
+            <div id="registracija-okvir">
+                <div class="telo ">
+                    <span><i class="fa fa-close" style="font-size: 1.5em;" onclick="zatvori()"></i></span>
+                    <h2>Registracija</h2>
+                </div>
+                <div class="telo" style="margin-bottom: 30px; margin-top: 20px;">
+                    <label>Unesite ime i prezime</label><br>
+                    <input type="text" placeholder="Ime i prezime..."><br>
+                    <label>Korisničko ime</label><br>
+                    <input type="text" placeholder="Unesite korisničko ime..."><br>
+                    <label>Šifra</label><br>
+                    <input type="password" placeholder="Unesite vašu šifru...">
+                </div>
+                <div class="telo potvrda">
+                    <button type="submit">Registruj se</button>
+                    <span onclick="prijaviSe()">Prijavi se</span>
+                </div>
+            </div>
+        </div>
+    <div id="biografija">
+        <div class="okvir">
+            <h2>BIOGRAFIJA</h2>
+            <p>Nikola Tesla je rođen u porodici pravoslavnog sveštenika 10. jula 1856. godine u Smiljanu, današnja Republika Hrvatska.
+             Njegovi roditelji Milutin i Georgina osim njega imali su sina Daneta i ćerke Angelinu i Milku, starije od Nikole i 
+             Maricu najmlađe dete u porodici Tesla.</p>
+            <p>Nikola Tesla bio je jedan od najpoznatijih srpskih i svetskih pronalazača i naučnika u oblasti fizike, elektrotehnike i radiotehnike.
+            Najznačajniji Teslini pronalasci su polifazni sistem, obrtno magnetsko polje, asinhroni motor, sinhroni motor i Teslin 
+            transformator. Takođe, otkrio je jedan od načina za generisanje visokofrekventne struje, dao je značajan doprinos u prenosu 
+            i modulaciji radio-signala, a ostali su zapaženi i njegovi radovi u oblasti rendgenskih zraka.</p>
+            <p>Njegov sistem naizmeničnih struja je omogućio znatno lakši i efikasniji prenos električne energije na daljinu. Bio je ključni čovek u izgradnji prve hidrocentrale na Nijagarinim vodopadima.</p>
+            <p>Jedini je Srbin po kome je nazvana jedna međunarodna jedinica mere, jedinica mere za gustinu magnetnog fluksa ili jačinu magnetnog polja — tesla.
+            Nikola Tesla je autor više od 700 patenata, registrovanih u 25 zemalja, od čega u oblasti elektrotehnike 112. Preminuo je u svojoj 87. godini, siromašan i zaboravljen.
+            </p>
+            <iframe width="70%" height="450" src="https://www.youtube.com/embed/jgpmjDU-_M4"></iframe>
+        </div>
+    </div>
+    <div id="futer">
+        <div class="okvir">
+            <span>&copy;&nbsp;Lazar Marojkin</span>
+            <ul id="opste">
+                <li><a href="autor.html">Autor</a></li>
+                <li><a href="sitemap.xml">Sitemap</a></li>
+                <li><a href="sass.txt">Sass</a></li>
+            </ul>
+            <div id="social">
+                <ul>
+                    <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                    <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+                    <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="kliner"></div>
+    </div>
+    <script>
+            function zatvori(){
+                if(document.getElementById("logovanje").style.display == "block")
+                    document.getElementById("logovanje").style.display = "none";
+                else
+                    document.getElementById("registracija").style.display = "none";
+            }
+            function logPrikaz(){
+                document.getElementById("logovanje").style.display = "block";
+            }
+            function prijaviSe(){
+                document.getElementById("registracija").style.display = "none";
+                document.getElementById("logovanje").style.display = "block";
+            }
+            function registrujSe(){
+                document.getElementById("logovanje").style.display = "none";
+                document.getElementById("registracija").style.display = "block";
+            }
+            </script>
+</body>
+</html>

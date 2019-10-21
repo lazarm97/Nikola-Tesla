@@ -1,0 +1,355 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    background-color: #000;
+    color: #fff;
+    font-family: initial;
+}
+#zaglavlje{
+    height: 35em;
+    width: 100%;
+    background-image: url("../slike/1.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+.okvir{
+    width: 1200px;
+    margin: 0px auto;
+    text-align: center;
+}
+.okvir h2{
+    padding-bottom: 10px;
+    padding-top: 20px;
+}
+.okvir p{
+    font-size: 20px;
+    text-align: justify;
+}
+p{
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+#meni{
+    width: 100%;
+    height: 50px;
+    background-color: #000;
+    color: #fff;
+    opacity: 0.9;
+    position: fixed;
+    align-items: center;
+    justify-content: space-between;
+    display: flex;
+    z-index: 1;
+}
+#meni ul{
+    display: flex;
+}
+#meni ul li:not(:last-child){
+    border-right: 2px dashed #ccc;
+    margin-right: 15px;
+}
+#meni ul li{
+    list-style-type: none;
+    padding-right: 15px;
+}
+#meni ul li a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 25px;
+}
+.desno{
+    text-align: right;
+}
+.levo{
+    text-align: left;
+}
+
+
+/* Position the image container (needed to position the left and right arrows) */
+.container {
+    position: relative;
+  }
+  
+  /* Hide the images by default */
+  .mySlides {
+    display: none;
+    text-align: center;
+  }
+  
+  /* Add a pointer when hovering over the thumbnail images */
+  .cursor {
+    cursor: pointer;
+  }
+  
+  /* Next & previous buttons */
+  .prev,
+  .next {
+    cursor: pointer;
+    position: absolute;
+    top: 30%;
+    width: auto;
+    padding: 16px;
+    margin-top: -50px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    -webkit-user-select: none;
+  }
+  
+  /* Position the "next button" to the right */
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover,
+  .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+  
+  /* Number text (1/3 etc) */
+  .numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+  }
+  
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Six columns side by side */
+  .column {
+    float: left;
+    width: 16.66%;
+    height: 100%;
+  }
+
+  .column img{
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+  }
+  
+  /* Add a transparency effect for thumnbail images */
+  .demo {
+    opacity: 0.6;
+  }
+  
+  .active,
+  .demo:hover {
+    opacity: 1;
+  }
+
+
+
+#galerija .okvir{
+    text-align: left;
+}
+#galerija{
+    padding: 20px 5px;
+}
+#meni h1 a{
+    text-decoration: none;
+    color: #fff;
+}
+#futer ul{
+    display: flex;
+}
+#futer ul li{
+    list-style-type: none;
+    padding-right: 15px;
+}
+#futer ul li a{
+    text-decoration: none;
+    color: #fff;
+}
+#futer ul li:not(:last-child){
+    border-right: 2px dashed #ccc;
+    margin-right: 15px;
+}
+#futer{
+    font-size: 20px;
+    margin: 25px 0px;
+    align-items: center;
+    justify-content: space-between;
+    display: flex;
+    border-top: 2px solid #ccc;
+    padding-top: 10px;
+}
+#futer .okvir{
+    display: flex;
+    justify-content: space-between;
+}
+#meni span i{
+    cursor:pointer;
+}
+.aktivan{
+    text-decoration: 1px solid #fff;
+    text-decoration-line: overline;
+}
+#biografija,#pronalasci{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: auto;
+}
+#galerija{
+    display: flex;
+    flex-wrap: wrap;
+}
+#autor img{
+    margin-top: 30px;
+}
+#logovanje,#registracija{
+    width: 100%;
+    height: 100%;
+    z-index: 999;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding-top: 50px;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: none;
+}
+#logovanje-okvir,#registracija-okvir{
+    margin: auto;
+    max-width: 500px;
+    width: 80%;
+    background-color: #333;
+    position: relative;
+    padding: 15px 35px;
+    box-sizing: border-box;
+    animation-duration: 0.3s;
+}
+.telo{
+    padding: 2px 16px;
+}
+#logovanje-okvir span,#registracija-okvir span{
+    float: right;
+    cursor: pointer;
+}
+.telo input[type="text"], .telo input[type="password"]{
+    padding: 5px 3px;
+    margin: 5px 0;
+    width: 100%;
+}
+.telo label{
+    font-size: 20px;
+}
+.telo button{
+    padding: 10px 25px;
+    font-size: 1em;
+    font-weight: bold;
+}
+.mySlides img{
+    height: 500px;
+    max-width: 100%;
+}
+.slikeRed{
+    width: 100%;
+    height: 110px;
+}
+.kliner{
+    clear: both;
+}
+
+/* ----- MEDIA QUERIES  ----- */
+
+/* Za velicine do 1200px */
+@media screen and (max-width: 1200px){
+    .okvir{
+        width: 95%;
+    }
+}
+
+/* Za velicine do 992px */
+@media screen and (max-width: 992px){
+    
+}
+
+/* za velicine do 768px */
+
+@media screen and (max-width: 768px){
+    #zaglavlje{
+        background-image: none;
+        height: auto !important;
+    }
+    .slikeRed{
+        display: none;
+    }
+    .prev,.next{
+        top: 50%;
+    }
+    .mySlides img{
+        max-width: 70%;
+        height: 400px;
+    }
+    #meni{
+        height: auto;
+        background-color: #333;
+        opacity: 1;
+        flex-direction: column;
+        position: relative;
+    }
+    #biografija iframe{
+        height: 350px;
+    }
+    #futer .okvir{
+        flex-direction: column;
+    }
+    #opste{
+        margin: 10px auto;
+    }
+    #social{
+        margin: 0px auto;
+    }
+}
+
+/* za velicine do 480px */
+
+@media screen and (max-width: 480px){
+    .okvir{
+        width: 100%;
+    }
+    #meni ul{
+        flex-wrap: wrap;
+        width: 100%;
+        justify-content: space-around;
+    }
+    #meni ul li a{
+        font-size: 20px;
+    }
+    #meni ul li{
+        padding-right: 0px;
+    }
+    #meni ul li:not(:last-child){
+        border-right: 0px;
+        margin-right: 0px;
+    }
+    #biografija iframe{
+        width: 95%;
+        height: 300px;
+    }
+    .mySlides img{
+        height: 300px;
+    }
+    .telo.potvrda{
+        display: flex;
+        flex-direction: column;
+    }
+    .telo.potvrda button{
+        margin-bottom: 10px;
+    }
+}
